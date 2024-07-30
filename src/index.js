@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-const phrases = ["Front end Developer", "Problem Solver"];
+const phrases = ["Front-end Developer", "Problem Solver"];
 
 let index = 0;
 let charIndex = 0;
