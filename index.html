@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    /> -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:ital,wght@1,300&family=Playfair+Display:wght@700&family=Playpen+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Ajmat Ali</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li>
+            <a
+              href="https://drive.google.com/file/d/1xTKth0xKRdphAYVeq5GtqtyXTbug0lwk/view?usp=sharing"
+              download="Frontend_Resume.pdf"
+              target="_blank"
+              >Resume</a
+            >
+          </li>
+        </ul>
+        <div class="burger-menu">&#9776;</div>
+      </nav>
+    </header>
+    <section>
+      <main id="about">
+        <div class="about-me">
+          <h4>Hi <span> 👋 </span> my name is</h4>
+          <h1>Ajmat Ali</h1>
+          <h3>And I'm <span id="role"></span></h3>
+          <div id="about-para">
+            <p>
+              My name is Ajmat Ali, a proficient front-end developer with a
+              penchant for quick learning and problem-solving. I am passionate
+              about my work, having successfully built websites like a Grocery
+              App and a movie search application using APIs. Eager to contribute
+              and thrive in future developer roles.
+            </p>
+            <button class="r_b">
+              <a
+                href="https://drive.google.com/file/d/1xTKth0xKRdphAYVeq5GtqtyXTbug0lwk/view?usp=sharing"
+                class="resume-button"
+                download
+                target="_blank"
+                >Resume</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="my-image">
+          <img src="./images/Ajmat1.png" alt="My Image" />
+        </div>
+      </main>
+      <!-- -----------------------------------------------------     About Me--->
+      <div id="aboutme"></div>
+      <!-- -----------------------------------------------------     TachStack--->
+      <div id="skills">
+        <h1><span>Techstack</span></h1>
+        <div class="skillsLogo">
+          <div>
+            <img src="./images/html.png" alt="" />
+            <p>HTML</p>
+          </div>
+          <div>
+            <img src="./images/css.png" alt="" />
+            <p>CSS</p>
+          </div>
+          <div>
+            <img src="./images/js.png" alt="" />
+            <p>JavaScript</p>
+          </div>
+          <div>
+            <img src="./images/react.jpg" alt="" />
+            <p>React</p>
+          </div>
+          <div>
+            <img src="./images/bootstrap.png" alt="" />
+            <p>Bootstrap</p>
+          </div>
+        </div>
+        <!-- --------------------------------------------- -->
+        <h1 class="tool"><span>Tools</span></h1>
+        <div class="skillsLogo">
+          <div>
+            <img src="./images/vscode.jpg" alt="" />
+            <p>Visual Studio Code</p>
+          </div>
+          <div>
+            <img src="./images/postman.png" alt="" />
+            <p>PostMan</p>
+          </div>
+          <div>
+            <img src="./images/git.png" alt="" />
+            <p>Git</p>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------------------------------------------------------------  Projects -->
+      <div id="project">
+        <h1 id="project_head"><span>Projects</span></h1>
+        <div id="projectSection">
+          <div id="cardContainer">
+            <div class="card">
+              <img
+                src="./images/node_expert.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Learning Exp. Clone</h5>
+                <p class="card-text">
+                  Successfully replicated key features and design within the
+                  tight deadline, showcasing proficiency in rapid development
+                  and React.
+                </p>
+                <p><b>Tech Stack:</b> HTML | CSS | JavaScript | React</p>
+                <a
+                  href="https://github.com/Ajmat-Ali/node-expert-project"
+                  target="_blank"
+                  ><button class="btn btn-primary" id="superRepo">
+                    Git Repo
+                  </button></a
+                >
+                <a
+                  href="https://node-expert-project.netlify.app/"
+                  target="_blank"
+                  ><button class="btn btn-primary">Live Site</button></a
+                >
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="./images/sugarCosmetics.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Sugar Cosmetics Clone</h5>
+                <p class="card-text">
+                  Implemented core functionalities like private routing and API
+                  data fetching, providing a functional and engaging user
+                  experience.
+                </p>
+                <p>
+                  <b>Tech Stack:</b> HTML | CSS | JavaScript | React | Fetch API
+                </p>
+                <a
+                  href="https://github.com/Ajmat-Ali/SugarCosmeticsDeploy"
+                  target="_blank"
+                  ><button class="btn btn-primary" id="superRepo">
+                    Git Repo
+                  </button></a
+                >
+                <a
+                  href="https://sugar-cosmetics-deploy.netlify.app/"
+                  target="_blank"
+                  ><button class="btn btn-primary">Live Site</button></a
+                >
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="./images/moviesApp.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Search Movies</h5>
+                <p class="card-text">
+                  An app for searching movies, with features for user
+                  authentication and profile management, enhancing user
+                  engagement and experience.
+                </p>
+                <p>
+                  <b>Tech Stack:</b> HTML | CSS | JavaScript | React |
+                  LocalStorage
+                </p>
+                <a
+                  href="https://github.com/Ajmat-Ali/movies-app-react"
+                  target="_blank"
+                  ><button class="btn btn-primary" id="superRepo">
+                    Git Repo
+                  </button></a
+                >
+                <a
+                  href="https://find-movies-app-react.netlify.app/"
+                  target="_blank"
+                  ><button class="btn btn-primary">Live Site</button></a
+                >
+              </div>
+            </div>
+            <div class="card">
+              <img src="./images/gusto.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Gusto Cloned</h5>
+                <p class="card-text">
+                  Gusto clone: Streamlined payroll, benefits, time tracking, tax
+                  compliance, onboarding, analytics, and self-service.
+                </p>
+                <p>
+                  <b>Tech Stack:</b> HTML | CSS | JavaScript | Local Storage
+                </p>
+                <a
+                  href="https://github.com/Ajmat-Ali/Gusto-project"
+                  target="_blank"
+                  ><button class="btn btn-primary" id="superRepo">
+                    Git Repo
+                  </button></a
+                >
+                <a href="https://gusto-project.netlify.app/" target="_blank"
+                  ><button class="btn btn-primary">Live Site</button></a
+                >
+              </div>
+            </div>
+            <div class="card">
+              <img src="./images/grocery.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Mini Grocery App</h5>
+                <p class="card-text">
+                  Effortlessly shop, add to cart, and order with our mini
+                  Grocery app for a seamless and convenient experience.
+                </p>
+                <p>
+                  <b>Tech Stack:</b> HTML | CSS | JavaScript | Local Storage |
+                  Fetch API
+                </p>
+                <a
+                  href="https://github.com/Ajmat-Ali/mini-grocery-app"
+                  target="_blank"
+                  ><button class="btn btn-primary" id="superRepo">
+                    Git Repo
+                  </button></a
+                >
+                <a href="https://mini-grocery-app.netlify.app/" target="_blank"
+                  ><button class="btn btn-primary">Live Site</button></a
+                >
+              </div>
+            </div>
+          </div>
+          <div id="navigation">
+            <button id="prevButton" class="btn btn-danger">Previous</button>
+            <button id="nextButton" class="btn btn-danger">Next</button>
+          </div>
+        </div>
+      </div>
+      <!-- -------------------------------------------- Projects End--------------------------------- -->
+
+      <!-- -------------------------------------------- Github Section Start--------------------------------- -->
+      <div id="githubParent">
+        <div>
+          <h1><span>My GitHub Contributation</span></h1>
+          <div class="git-img">
+            <div>
+              &nbsp;<img
+                align="center"
+                src="https://github-readme-stats.vercel.app/api?username=ajmat-ali&show_icons=true&locale=en"
+                alt="ajmat-ali"
+              />
+            </div>
+            <div>
+              <img
+                align="left"
+                src="https://github-readme-stats.vercel.app/api/top-langs?username=ajmat-ali&show_icons=true&locale=en&layout=compact"
+                alt="ajmat-ali"
+              />
+            </div>
+            <div>
+              <img
+                align="center"
+                src="https://github-readme-streak-stats.herokuapp.com/?user=ajmat-ali&"
+                alt="ajmat-ali"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- -------------------------------------------- Github Section end--------------------------------- -->
+
+      <!-- -------------------------------------------- contact Section Start--------------------------------- -->
+      <div id="contact">
+        <div>
+          <h1><span>Contact</span></h1>
+        </div>
+        <div class="contacts-details">
+          <h4>Get in Touch</h4>
+          <ul>
+            <li>
+              <a href="mailto:badshah9631619358@gmail.com" target="_blank"
+                ><i class="bi bi-envelope"></i> badshah9631619358@gmail.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:8809661202" target="_blank"
+                ><i class="bi bi-telephone"></i> 8809661202</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/ajmat-ali-a85342288/"
+                target="_blank"
+                ><i class="bi bi-linkedin"></i> ajmat-ali-a85342288</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/Ajmat-Ali" target="_blank"
+                ><i class="bi bi-github"></i> Ajmat-Ali</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="footer">
+        <div>
+          <p>Thank You for visiting my PortFolio</p>
+        </div>
+      </div>
+      <a href="#about">
+        <aside>
+          <i class="bi bi-arrow-up-square-fill"></i>
+        </aside>
+      </a>
+    </section>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

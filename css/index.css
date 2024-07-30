@@ -1,0 +1,651 @@
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #fff;
+}
+
+header {
+  background-color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  background-color: #40e0d0;
+  padding-bottom: 22px;
+  z-index: 1000;
+}
+aside {
+  position: fixed;
+  font-size: 35px;
+  cursor: pointer;
+  right: 30px;
+  bottom: 100px;
+}
+aside i {
+  color: #40e0d0;
+  /* background-color:#394a48; */
+  border: none;
+}
+.logo {
+  color: black;
+  font-size: 1.3em;
+  font-weight: bolder;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  transition: max-height 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Adjust the duration and cubic-bezier values for a smoother effect */
+  max-height: 0; /* Initially hide the menu */
+}
+
+.nav-links.show {
+  max-height: 200px; /* Adjust this value based on your content height */
+  background-color: #40e0d0;
+}
+
+.nav-links li {
+  margin-right: 20px;
+  margin-bottom: 10px;
+  /* padding-bottom: 4px; */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: color 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Adjust the duration and cubic-bezier values for color transition */
+}
+
+.nav-links a:hover {
+  color: teal;
+}
+
+.burger-menu {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  color: black;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  /* border-bottom: 1px solid lightgray; */
+  margin-top: 70px;
+  padding-bottom: 50px;
+}
+main > .about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+}
+main > .about-me h4 {
+  color: #c0c0c0;
+  margin-bottom: 0px;
+}
+main > .about-me h1 {
+  color: rgb(255, 255, 255);
+  font-size: 80px;
+  margin-bottom: 0px;
+}
+main > .about-me h3 {
+  color: rgb(255, 255, 255);
+  color: #fff;
+}
+main > .about-me h3 > #role {
+  color: #40e0d0;
+}
+main > .my-image {
+  margin-right: 30px;
+  z-index: -10;
+  width: 30%;
+}
+main > .my-image img {
+  width: 100%;
+  clip-path: circle(40.4% at 48% 43%);
+}
+
+#about-para {
+  width: 70%;
+  color: #c0c0c0;
+  margin-top: 20px;
+  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Playfair Display", serif;
+  font-family: "Playpen Sans", cursive;
+}
+#about-para > p {
+  font-size: 16px;
+}
+.resume-button {
+  background-color: #40e0d0;
+  color: black;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: bold;
+  border: none;
+  text-decoration: none;
+}
+.r_b {
+  background-color: transparent;
+  border: none;
+  margin-top: 20px;
+}
+/* .resume-button a{
+  color: black;
+} */
+
+/* ------------------------------------------------------- */
+#skills {
+  width: 90%;
+  margin: auto;
+  /* border-bottom: 1px solid lightgray; */
+  padding-bottom: 100px;
+  padding-top: 30px;
+}
+#skills > h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+#skills > h1 span {
+  border-bottom: 3.5px solid white;
+  padding-bottom: 5px;
+}
+.skillsLogo {
+  display: flex;
+  justify-content: space-evenly;
+}
+.skillsLogo > div {
+  height: 140px;
+  z-index: -10;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+#skills > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  mix-blend-mode: difference;
+  border-radius: 7px;
+}
+.skillsLogo div p {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 12px;
+  color: #40e0d0;
+}
+/* ------------------------------------------------------  Projects  */
+/* #project {
+  border: 1px solid green;
+} */
+#project_head {
+  text-align: center;
+  margin-top: 70px;
+  /* border: 1px solid red; */
+  padding-bottom: 40px;
+}
+#project_head span {
+  border-bottom: 4px solid #fff;
+  padding-bottom: 10px;
+}
+#projectSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  /* width: 100%; */
+}
+
+#cardContainer {
+  display: flex;
+  flex-wrap: nowrap; /* Ensure that the cards do not wrap */
+  justify-content: flex-start; /* Align cards to the start */
+  overflow: hidden; /* Hide the overflow content */
+  /* padding: 5px 10px; */
+  width: 90%;
+  /* border: 2px solid rgb(162, 165, 162); */
+  border-radius: 15px; /* Rounded corners to emphasize container edges */
+  /* position: relative; Ensure the pseudo-elements are positioned relative to the container */
+  box-shadow: 5px 0 10px rgba(239, 235, 235, 0.5); /* Optional shadow for depth */
+  gap: 20px; /* Space between cards */
+  padding: 20px 20px;
+}
+
+.card {
+  flex-shrink: 0;
+  /* width: 25%; */
+  width: 18rem;
+  text-align: center;
+  padding-top: 7px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+#cardContainer > .card img {
+  width: 95%;
+  display: block;
+  margin: auto;
+  height: 100%;
+}
+/* #cardContainer > .card a {
+  cursor: pointer;
+  color: red;
+} */
+#navigation {
+  margin-top: 20px;
+}
+
+#prevButton,
+#nextButton {
+  margin: 5px;
+}
+
+/* ---------------------------------------------------------- Projects End  */
+
+/* ---------------------------------------------------------- Github Starts  */
+
+#githubParent {
+  width: 95%;
+  margin: auto;
+  padding-bottom: 50px;
+  margin-top: 100px;
+}
+#githubParent h1 {
+  text-align: center;
+}
+#githubParent h1 span {
+  border-bottom: 3.5px solid white;
+  padding-bottom: 3px;
+}
+#githubParent .git-img {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 40px;
+  gap: 20px 40px;
+}
+#githubParent .git-img img {
+  width: 100%;
+}
+/* ------------------------------------------Contact Section Start  */
+#contact {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 50px;
+}
+#contact h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+#contact h1 span {
+  border-bottom: 3.5px solid white;
+  padding-bottom: 5px;
+}
+/* #contact .contacts-details {
+  border: 2px solid white;
+} */
+
+#contact .contacts-details ul li {
+  margin-bottom: 20px;
+  list-style: none;
+}
+#contact .contacts-details h4 {
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #40e0d0;
+}
+#contact .contacts-details a {
+  font-size: 16px;
+  /* color: #40e0d0; */
+  color: rgb(204, 198, 198);
+
+  /* text-decoration: none; */
+}
+#contact .contacts-details a i {
+  margin-right: 20px;
+  color: #40e0d0;
+}
+#footer {
+  text-align: center;
+  margin-top: 40px;
+  background-color: #40e0d0;
+  color: black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer p {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Media query for responsive design */
+@media all and (max-width: 1100px) {
+  #about-para {
+    width: 90%;
+  }
+}
+
+@media all and (max-width: 992px) {
+  main > .about-me {
+    width: 63%;
+  }
+  main > .about-me h1 {
+    font-size: 65px;
+  }
+  main > .my-image {
+    margin-right: 0px;
+    width: 37%;
+    margin: auto;
+  }
+  #about-para {
+    width: 95%;
+  }
+  /* ---------------------------------------------------  */
+  .skillsLogo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .skillsLogo > div {
+    height: 140px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #c3c3c3;
+    z-index: 1;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+  main {
+    flex-direction: column-reverse;
+    width: 90%;
+  }
+
+  main > .about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+  }
+  main > .about-me h3 > #role {
+    color: #40e0d0;
+  }
+  main > .my-image {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  main > .my-image img {
+    width: 100%;
+  }
+  #about-para {
+    width: 100%;
+  }
+  /* -----------------------------------  */
+
+  #skills {
+    margin-top: 30px;
+  }
+  .skillsLogo {
+    display: flex;
+    gap: 50px 60px;
+    width: 80%;
+    margin: auto;
+  }
+  .skillsLogo > div {
+    height: 110px;
+  }
+  .container {
+    width: 80%;
+  }
+  .parentPCard .Pcard-body > p {
+    font-size: 14px;
+  }
+  .parentPCard .Pcard-body {
+    height: 160px;
+  }
+  .parentPCard .Pcard-footer {
+    width: 90%;
+    margin-top: -7px;
+    font-size: 16px;
+  }
+  .parentPCard .Pcard-footer button {
+    font-size: 15px;
+    padding: 3px;
+  }
+  .Pcard {
+    width: 225px;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-left: 15px;
+  }
+  .parentPCard .Pcard-header h2 {
+    font-size: 22px;
+    margin-top: 0px;
+  }
+  /* ------------------------ GitHub*/
+  #githubParent {
+    width: 80%;
+    margin: auto;
+  }
+  #githubParent .git-img {
+    gap: 15px 0px;
+  }
+  #githubParent .git-img img {
+    display: block;
+    margin: auto;
+  }
+}
+
+@media all and (max-width: 567px) {
+  main {
+    flex-direction: column-reverse;
+    width: 90%;
+    margin-top: 30px;
+  }
+
+  main > .about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  main > .my-image {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  main > .my-image img {
+    width: 100%;
+  }
+  #about-para {
+    width: 100%;
+  }
+  main > .about-me h1 {
+    color: rgb(255, 255, 255);
+    font-size: 55px;
+    margin-bottom: 0px;
+  }
+  main > .about-me h3 {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    color: #fff;
+  }
+  #about-para > p {
+    font-size: 15px;
+    word-spacing: 3px;
+    line-height: 22px;
+  }
+  #skills {
+    width: 95%;
+  }
+  .skillsLogo {
+    justify-content: center;
+    gap: 20px 70px;
+    width: 100%;
+    margin: auto;
+  }
+  .skillsLogo > div {
+    height: 90px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  #Pcards-container {
+    width: 100%;
+    overflow-y: auto;
+  }
+  .Pcards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 999999999px;
+    margin-right: 120px;
+  }
+  .Pcard {
+    width: 215px;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-left: 15px;
+  }
+  .parentPCard .Pcard-header h2 {
+    font-size: 22px;
+    margin-top: 0px;
+  }
+  .parentPCard .Pcard-footer {
+    width: 90%;
+    margin-top: 7px;
+    font-size: 16px;
+  }
+  .slide-left,
+  .slide-right {
+    height: 15px;
+    width: 15px;
+  }
+
+  .slide-left {
+    margin-left: 22%;
+  }
+
+  .slide-right {
+    margin-left: 22%;
+  }
+  /* ------------------------------ GitHub  */
+
+  #githubParent {
+    width: 90%;
+  }
+  #githubParent h1 {
+    font-size: 24px;
+  }
+  #githubParent .git-img {
+    gap: 10px;
+  }
+  /* ----------------------------------------Contact  */
+
+  #contact {
+    width: 100%;
+  }
+  #contact .contacts-details h4 {
+    margin-left: 20px;
+  }
+  #footer {
+    margin-top: 60px;
+    color: rgb(38, 35, 35);
+    padding: 10px;
+  }
+  #footer p {
+    font-size: 18px;
+  }
+}
+/* ---------------------------------------------------- Media Query400px */
+@media all and (max-width: 440px) {
+  #projectSection {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  #cardContainer {
+    width: 100%;
+    gap: 7px;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
+@media all and (max-width: 367px) {
+  #projectSection {
+    margin: 10px;
+  }
+  #cardContainer {
+    width: 100%;
+    gap: 0px;
+    border: 1px solid red;
+    padding: 0px;
+  }
+
+  .card {
+    width: 100%;
+  }
+  #contact .contacts-details ul {
+    margin-left: -7px;
+  }
+  #contact .contacts-details ul li {
+    margin-left: -20px;
+  }
+  #contact .contacts-details a {
+    margin-right: 14px;
+  }
+  #contact .contacts-details a i {
+    margin-right: 10px;
+  }
+  #footer p {
+    font-size: 16px;
+  }
+}
