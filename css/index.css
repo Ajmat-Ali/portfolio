@@ -89,7 +89,7 @@ nav {
 }
 .homesectionContent {
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 100px;
 }
 .homesectionContent h3 > #role {
@@ -97,12 +97,12 @@ nav {
 }
 .homesectionContent h4 {
   color: #c0c0c0;
-  margin-bottom: 0px;
+  margin-bottom: 7px;
 }
 .homesectionContent h1 {
   color: rgb(255, 255, 255);
   font-size: 80px;
-  margin-bottom: 0px;
+  margin-bottom: 7px;
 }
 .homesectionContent h3 {
   color: rgb(255, 255, 255);
