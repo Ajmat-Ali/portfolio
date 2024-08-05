@@ -45,14 +45,14 @@
       <nav>
         <ul class="nav-links">
           <li><a href="./index.html">Home</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="#aboutme">About</a></li>
           <li><a href="#contactLink">Contact</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#project">Projects</a></li>
           <li>
             <a
               href="https://drive.google.com/file/d/1wos2ULWdvVooV2RdzVwpyN16muvIcQxT/view?usp=sharing"
-              download="Frontend_Resume.pdf"
+              download
               target="_blank"
               >Resume</a
             >
@@ -62,34 +62,46 @@
       </nav>
     </header>
     <section>
-      <main id="about">
-        <div class="about-me">
+      <div id="homeSection">
+        <div class="homesectionContent">
           <h4>Hi <span> 👋 </span> my name is</h4>
           <h1>Ajmat Ali</h1>
           <h3>And I'm <span id="role"></span></h3>
-          <div id="about-para">
-            <p>
-              My name is Ajmat Ali, a proficient front-end developer with a
-              penchant for quick learning and problem-solving. I am passionate
-              about my work, having successfully built websites like a Grocery
-              App and a movie search application using APIs. Eager to contribute
-              and thrive in future developer roles.
-            </p>
-            <button class="r_b">
-              <a
-                href="https://drive.google.com/file/d/1wos2ULWdvVooV2RdzVwpyN16muvIcQxT/view?usp=sharing"
-                class="resume-button"
-                download
-                target="_blank"
-                >Resume</a
-              >
-            </button>
+          <button class="r_b">
+            <a
+              href="https://drive.google.com/file/d/1wos2ULWdvVooV2RdzVwpyN16muvIcQxT/view?usp=sharing"
+              class="resume-button"
+              download
+              target="_blank"
+              >Resume</a
+            >
+          </button>
+        </div>
+        <div class="homesectionImage">
+          <img src="./images/homesection.jpg" alt="" />
+        </div>
+      </div>
+      <div id="aboutme">
+        <h1 class="aboutme-head"><span>About Me</span></h1>
+        <main id="about">
+          <div class="about-me">
+            <div id="about-para">
+              <p>
+                A proficient front-end developer with a knack for quick learning
+                and problem-solving. Passionate about the craft, demonstrated by
+                successful projects like a Grocery App and a movie search
+                application utilizing APIs. Skilled in building responsive and
+                user-friendly websites. Dedicated to continuous improvement and
+                eager to contribute to future developer roles. Ready to thrive
+                in dynamic and challenging environments.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="my-image">
-          <img src="./images/Ajmat1.png" alt="My Image" />
-        </div>
-      </main>
+          <div class="my-image">
+            <img src="./images/Ajmat1.png" alt="My Image" />
+          </div>
+        </main>
+      </div>
       <!-- -----------------------------------------------------     About Me--->
       <div id="aboutme"></div>
       <!-- -----------------------------------------------------     TachStack--->
@@ -139,7 +151,7 @@
         <h1 id="project_head"><span>Projects</span></h1>
         <div id="projectSection">
           <div id="cardContainer">
-            <div class="card">
+            <!-- <div class="card">
               <img
                 src="./images/node_expert.png"
                 class="card-img-top"
@@ -166,7 +178,7 @@
                   ><button class="btn btn-primary">Live Site</button></a
                 >
               </div>
-            </div>
+            </div> -->
             <div class="card">
               <img
                 src="./images/sugarCosmetics.png"
@@ -353,7 +365,7 @@
           <p>Thank You for visiting my PortFolio</p>
         </div>
       </div>
-      <a href="#about">
+      <a href="#homeSection">
         <aside>
           <i class="bi bi-arrow-up-square-fill"></i>
         </aside>
